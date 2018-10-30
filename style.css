@@ -55,7 +55,16 @@ section {
     width: 25%;
 }
 
+.sectionTitle > .title-description {
+    font-size: 0.6em;
+    font-style: italic;
+    color: gray;
+    margin-top: 1px;
+}
+
 .sectionTitle h1 {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 2em;
 }
 
