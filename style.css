@@ -161,6 +161,10 @@ section {
     margin: 0;
 }
 
+.lastline {
+    margin-bottom: 0;
+}
+
 @media all and (min-width: 51em) and (max-width: 67em) {
     .container {
         font-size: 120%;
