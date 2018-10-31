@@ -134,6 +134,8 @@ section {
 .skillbar-gauge {
     height: 40px;
     background-color: #1e90ff; /* dodgerblue */
+    text-align: center !important;
+    color: #fff !important;
     border-radius: 4px;
 }
 
@@ -161,6 +163,28 @@ section {
 }
 
 @media all and (max-width: 50em) {
+    .container {
+        width: 80%;
+        margin: 10px auto;
+        min-width: 280px;
+    }
+
+    .sectionTitle, .sectionContent {
+        float: none;
+        width: 100%;
+    }
+
+    .sectionTitle {
+        margin-left: -2px;
+        font-size: 1.25em;
+    }
+    
+    .skillbar-border {
+        margin-bottom: 16px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
     .container {
         width: 80%;
         margin: 10px auto;
