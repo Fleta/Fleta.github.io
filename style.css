@@ -10,14 +10,27 @@
     /* margin-bottom: 20px; */
 }
 
+.sectionContent > p > a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #000000;
+}
+
 .container {
     width: 70%;
     margin: 0 auto;
 }
 
+.head > h1 > a {
+    font-size: 0.5em;
+    text-decoration: none !important;
+    color: #1e90ff;
+    font-style: italic;
+}
+
 .head .name {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .head {
@@ -26,7 +39,7 @@
 
 #contact > li {
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #contact > li > a {
@@ -163,6 +176,12 @@ section {
 
 .lastline {
     margin-bottom: 0;
+}
+
+.moveimg {
+    margin-right: 1%;
+    height: 320px;
+    width: 180px;
 }
 
 @media all and (min-width: 51em) and (max-width: 67em) {

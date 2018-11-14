@@ -1,0 +1,69 @@
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1 style="float:left; font-size: 1.8em"> 졸업과제 : 딥러닝을 활용한 EEG/EMG 분류 및 이를 활용한 드론 제어 <a href="../resources/panel_1.pptx"><span>발표자료 원본</span></a></h1>
+            <h1 class="name" style="font-size:1.5em;">윤 경언</h1>
+            <div class="content">
+                <ul id="contact">
+                    <li>
+                        <a href="mailto:yasoueisin@gmail.com"><img src="../images/mail.png"></a>
+                        <a href="mailto:yasoueisin@gmail.com"><span>yasoueisin@gmail.com</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Fleta" target="_blank"><img src="../images/github_logo.png"></a>
+                        <a href="https://github.com/Fleta" target="_blank"><span>Fleta</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <section>
+            <article>
+                <div class="sectionTitle">
+                    <h1>Abstract</h1>
+                </div>
+                <div class="sectionContent">
+                    <p><a href="https://openbci.com"><span>OpenBCI</span></a>를 이용하여 사용자의 뇌파와 근전도신호를 측정하고, 측정된 데이터를 사용자의 행동에 따라 라벨링하고 학습시켰습니다. 학습된 모델을 바탕으로 실시간으로 들어오는 데이터를 분류하고 예측 결과에 따라 특정 행동이 드론의 특정 동작을 하도록 구현하였습니다.</p>
+                    <p class="lastline">저는 프로젝트 내에서 Training set을 모으기 위한 OpenBCI 클라이언트 수정, 분류를 위한 레이어 구성 및 엔지니어링에 기여하였습니다. Java와 Processing(OpenBCI)을 사용하였고, machine learning algorithm은 <a href="https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-core">deeplearning4j</a>를 사용하였습니다.</p>
+                </div>
+            </article>    
+            <div class="clear"></div>
+        </section>
+        <section>
+            <article>
+                <div class="sectionTitle">
+                    <h1>Considerations</h1>
+                </div>
+                <div class="sectionContent">
+                    <article>
+                        <h2>1. Which neural network - MLP, CNN, RNN</h2>
+                        <p>머신러닝을 처음 공부하면서 여러가지 neural networks에 대해 공부하였습니다. 그 중에서 저희의 문제 -뇌파/근전도신호 분류- 를 해결하기 위해 사용할 가장 적절한 네트워크를 선택해야 했습니다.</p>
+                        <p>결론부터 얘기하자면, 저희는 MLP를 사용했습니다. 저희가 OpenBCI로부터 받는 신호는 표의 형식으로 나옵니다. 그리고 데이터가 일정 시간 간격으로 배치되어 있고, 이런 time series data의 패턴을 찾고 라벨링을 할 수 있어야 했습니다. 이러한 요구사항을 수행하기엔 선형 모델이 가장 좋다고 생각했고, 따라서 MLP Classifier를 선택했습니다</p>
+                    </article>
+                    <article>
+                        <h2>2. Activation function and number of layers</h2>
+                        <p>처음에 고민했던 함수는 sigmoid function입니다. 하지만 sigmoid function은 gradient vanishing 문제가 있었고, 이를 해결한 함수가 ReLU라는 내용을 알게 되어 ReLU를 사용하게 되었습니다.</p>
+                        <p>하지만 ReLU의 single-layer로 학습하고 예측했을 때 예측 정확도가 0.5~0.6사이의 수치였습니다. (dataset이 크지 않아서 차이가 좀 났습니다). 이런 내용을 개선하기 위해 저희는 score를 정규화 하기 위해 레이어를 하나 추가하고 softmax를 적용했습니다. softmax 적용 이후에 0.5~0.6 근처의 예측 정확도가 0.7 이상으로 상승했습니다.</p>
+                    </article>
+                </div>
+            </article>    
+            <div class="clear"></div>
+        </section>
+        <section>
+            <article>
+                <div class="sectionTitle">
+                    <h1>Result</h1>
+                </div>
+                <div class="sectionContent">
+                    <img class="moveimg" src="../images/move_before.png">
+                    <img class="moveimg" src="../images/move_after.png">
+                </div>
+            </article>
+        </section>
+    </div> <!-- container end -->
+</body>
