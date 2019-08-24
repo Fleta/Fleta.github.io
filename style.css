@@ -158,6 +158,20 @@ section {
     border-radius: 4px;
 }
 
+.block {
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    vertical-align: baseline;
+    padding: .25em .4em;
+    display: inline-block;
+    box-sizing: border-box;
+    /* font-size: 75%; */
+    border-radius: 5rem;
+    background-color: #1e90ff;
+    color: white;
+}
+
 .inline {
     display: inline-block;
 }
