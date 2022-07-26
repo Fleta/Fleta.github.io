@@ -14,13 +14,13 @@ module.exports = {
     name: `fleta`,
     bio: {
       role: `software engineer`,
-      description: [''],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      description: ['안녕하세요.', '반갑습니다.', '잡담을 올립니다.'],
+      thumbnail: 'bunong.png', // Path to the image in the 'asset' folder
     },
     social: {
-      github: ``, // `https://github.com/zoomKoding`,
-      linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
-      email: ``, // `zoomkoding@gmail.com`,
+      github: `https://github.com/fleta`, 
+      linkedIn: ``, 
+      email: ``, 
     },
   },
 
@@ -43,12 +43,12 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2021.02 ~',
-        activity: '개인 블로그 개발 및 운영',
+        date: '2020.11.02 ~',
+        activity: '',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          post: '',
+          github: '',
+          demo: '',
         },
       },
     ],
@@ -78,9 +78,9 @@ module.exports = {
         techStack: [''],
         thumbnailUrl: '',
         links: {
-          post: '/start-gatsby-blog-1/start-gatsby-blog-1/',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          post: '/creating-blog/start-gatsby-blog-1/',
+          github: 'https://github.com/fleta/fleta.github.io',
+          demo: 'https://fleta.github.io',
         },
       },
     ],

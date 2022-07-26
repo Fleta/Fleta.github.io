@@ -1,4 +1,5 @@
 ---
+emoji: 🔮
 title: Javadoc 작성기
 date: '2019-12-16'
 tags: Java JavaDoc
