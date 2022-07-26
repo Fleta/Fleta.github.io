@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-js",
+    "path": "/posts/Chat",
+    "result": {"pageContext":{"currentCategory":"Chat","categories":["All","Chat","Tech","Audio"],"edges":[{"node":{"id":"5059c89a-a093-5080-a92a-67c462741d9e","excerpt":"알고리즘 스터디 계획 1. 2021년에 뭐했나 1월 입사 3개월차. 평소에 좀 많이 이상한 분이라고 생각했던 옆 자리 사람이 정직을 당했다.\r\n정말 이상한 코드들이 널리고 널렸는데 개선을 못 하게 하는 주범이 사라지게 되어서 앞으로 어떻게 할 지 얘기를 좀 했었던 것 같다.\r\n일단은 남아있는 생쿼리들을 ORM으로 옮기자고 얘기해서 feature들을 올리면서 중간중간 리팩토링을 개선했던 것 같은데 그 뒤로 기억이 잘 안 난다.\r\n2월달에 엄청난 사건이 터졌던게 원인인 것 같다. 2월 하룻밤만에 시스템이 싹 다 사라지는 엄청난 장애가 터졌다. 자고 일어나보니 몇몇 분들은 한밤중에 연락 받아서 진작에 회사 나가서 인프라를 다시 구축하는 중이었다. 하루 정도를 들여 웹 스토어는 다시 오픈했으나 기존 주문건을 수기로 처리하느라 신규 주문의 처리가 지연되었으며, 이 때문에 평소 대비 5배 정도까지 주문이 쌓이게 되었다. 문제는 기존 시스템이 n+1문제가 심각해서 주문건이 5배 수준이 되었다고…","fields":{"slug":"/chat/retrospective-2021/"},"frontmatter":{"categories":"Chat","title":"2021년 회고","date":"December 31, 2021"}},"next":{"fields":{"slug":"/chat/tech/architecture-components/"}},"previous":null}]}},
+    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
