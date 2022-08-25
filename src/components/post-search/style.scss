@@ -1,6 +1,6 @@
 @use '../../styles/variables'as *;
 @use '../../styles/mixins'as *;
-
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
 
 .search-input-wrapper {
     display: none;

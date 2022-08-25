@@ -1,5 +1,6 @@
 @use '../../styles/mixins'as *;
 @use '../../styles/variables'as *;
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
 
 .post-tabs-wrapper {
   display: flex;
@@ -27,6 +28,7 @@
         color: var(--tab-text-color);
         font-weight: 500;
         font-size: 17px;
+        line-height: calc(1ex / 0.31);
         transition: all 200ms ease;
 
         :hover {
