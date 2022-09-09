@@ -2,6 +2,7 @@
 @use '../styles/mixins'as *;
 @use '../styles/reset'as *;
 @use '../styles/colors'as *;
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css");
 
 * {
     box-sizing: border-box;
